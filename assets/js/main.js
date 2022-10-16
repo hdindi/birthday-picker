@@ -11,7 +11,7 @@ $(document).ready(function () {
     $("#calculate_age").click(function (e) {
         e.preventDefault();
         birth_date = $("#BithDate").val();
-        gender = $("#Gender").val(); 
+        gender = $("#Gender").val();
 
         if ($("#BithDate").val() === "") {
             $(".birthdate_notify").append("Empty Birth Date selection");
@@ -20,7 +20,7 @@ $(document).ready(function () {
             $(".gender_notify").append("Empty Gender selection ");
 
         } else {
-            
+
             $(".birthdate_notify").text(" ");
             $(".gender_notify").text(" ");
             var convertDate = new Date(birth_date);
@@ -46,12 +46,17 @@ $(document).ready(function () {
     });
 
     function maleSelector(dayWeek) {
-        console.log("Male selector ")
+        const male = { 0: "Kwasi", 1: "Kwadwo", 2: "Kwabena", 3: "Kwaku", 4: "Yaw", 5: "Kofi", 6: "Kwame" };
+        console.log("Male value => " + male[dayWeek])
+        return male[dayWeek];
     }
 
 
     function femaleSelector(dayWeek) {
-        console.log("Female selector ")
+        const female = { 0: "Akosua", 1: "Adwoa", 2: "Abenaa", 3: "Akua", 4: "Yaa", 5: "Afua", 6: "Ama" };
+        console.log("Female value => " + female[dayWeek])
+        return female[dayWeek]; 
+        
     }
 
 
