@@ -23,6 +23,7 @@ $(document).ready(function () {
 
             $(".birthdate_notify").text(" ");
             $(".gender_notify").text(" ");
+            $(".ghanaian_name").text(" ");
             var convertDate = new Date(birth_date);
             var dayWeek = convertDate.getDay();
 
@@ -47,16 +48,20 @@ $(document).ready(function () {
 
     function maleSelector(dayWeek) {
         const male = { 0: "Kwasi", 1: "Kwadwo", 2: "Kwabena", 3: "Kwaku", 4: "Yaw", 5: "Kofi", 6: "Kwame" };
-        console.log("Male value => " + male[dayWeek])
+        console.log("Male value => " + male[dayWeek]);
+        $(".ghanaian_name").text(" ");
+        $(".ghanaian_name").append(male[dayWeek]);
         return male[dayWeek];
     }
 
 
     function femaleSelector(dayWeek) {
         const female = { 0: "Akosua", 1: "Adwoa", 2: "Abenaa", 3: "Akua", 4: "Yaa", 5: "Afua", 6: "Ama" };
-        console.log("Female value => " + female[dayWeek])
-        return female[dayWeek]; 
-        
+        console.log("Female value => " + female[dayWeek]);
+        $(".ghanaian_name").text(" ");
+        $(".ghanaian_name").append(female[dayWeek]);
+        return female[dayWeek];
+
     }
 
 
