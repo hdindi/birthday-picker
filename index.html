@@ -51,6 +51,7 @@
                         id="BithDate"
                         aria-describedby="helpId"
                         placeholder=""
+                        max=""
                       />
                     </div>
                   </div>
@@ -70,8 +71,8 @@
                 <hr>
 
                 <div class="offset-sm-2 col-sm-10">
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                  <button  type="reset" class="btn btn-danger">Cancel</button>
+                  <button type="button" id="calculate_age" class="btn btn-primary calculate_age">Submit</button>
+                  <button  type="reset" id="cancel_btn" class="btn btn-danger">Cancel</button>
                 </div>
 
              
@@ -83,6 +84,7 @@
       </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
       async
