@@ -23,7 +23,7 @@
 
 
 ## link to live site on GitHub Pages
-[title](https://hdindi.github.io/birthday-picker/)
+[BirthDay Picker](https://hdindi.github.io/birthday-picker/)
 
 ## copyright and license information**
 
