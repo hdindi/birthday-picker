@@ -5,10 +5,7 @@ $(document).ready(function () {
         e.preventDefault();
         birth_date = $("#BithDate").val();
 
-        var d = new Date(birth_date);
-        var n = d.getDay(d);
-
-        console.log(n)
+      
 
         weekDayCalculator(birth_date);
 
