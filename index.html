@@ -30,21 +30,22 @@
     <div class="container">
       <div class="container">
         <div class="row">
-         
           <div class="container">
             <form>
-              <div class="form-group row">
-               
-               
-              </div>
+              <div class="form-group row"></div>
               <fieldset class="form-group row">
-                <legend class="col-form-legend col-sm-1-12 font-monospace col-form-label-lg col-sm-12">BithDate Calculator</legend>
+                <legend
+                  class="col-form-legend col-sm-1-12 font-monospace col-form-label-lg col-sm-12"
+                >
+                  BithDate Calculator
+                </legend>
                 <div class="col-sm-1-12">
                   <div class="col-md-1-12">
                     <label>Date of Birth</label>
                     <div class="form-group">
                       <label for=""></label>
                       <input
+                        required
                         type="date"
                         class="form-control"
                         name="BithDate"
@@ -59,7 +60,13 @@
                   <div class="col-md-1-12">
                     <div class="form-group">
                       <label for="">Gender</label>
-                      <select class="form-control" name="Gender" id="Gender">
+                      <select
+                        class="form-control"
+                        required
+                        name="Gender"
+                        id="Gender"
+                      >
+                        <option value=""></option>
                         <option value="female">Female</option>
                         <option value="male">Male</option>
                       </select>
@@ -68,15 +75,20 @@
                 </div>
               </fieldset>
               <div class="form-group row">
-                <hr>
+                <hr />
 
                 <div class="offset-sm-2 col-sm-10">
-                  <button type="button" id="calculate_age" class="btn btn-primary calculate_age">Submit</button>
-                  <button  type="reset" id="cancel_btn" class="btn btn-danger">Cancel</button>
+                  <button
+                    type="button"
+                    id="calculate_age"
+                    class="btn btn-primary calculate_age"
+                  >
+                    Submit
+                  </button>
+                  <button type="reset" id="cancel_btn" class="btn btn-danger">
+                    Cancel
+                  </button>
                 </div>
-
-             
-
               </div>
             </form>
           </div>

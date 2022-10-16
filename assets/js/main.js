@@ -25,8 +25,7 @@ $(document).ready(function () {
             case "male":
                 maleSelector(dayWeek);
                 break;
-            case "":
-                break;
+            
         }
 
 
