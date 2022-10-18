@@ -13,6 +13,17 @@ $(document).ready(function () {
         birth_date = $("#BithDate").val();
         gender = $("#Gender").val();
 
+        var CC = birth_date.substr(0, 2);
+
+        var YY = birth_date.substr(2, 2);
+        var MM = birth_date.substr(5, 2);
+        var DD = birth_date.substr(8, 2);
+
+        if(DD < 1 || MM < 0 || YY < 0 ){
+            $(".birthdate_notify").append("Invalid Birth Date selection , please try again ... "); 
+        }
+
+
         if ($("#BithDate").val() === "") {
             $(".birthdate_notify").append("Empty Birth Date selection");
 
@@ -27,7 +38,7 @@ $(document).ready(function () {
             var convertDate = new Date(birth_date);
             var dayWeek = convertDate.getDay();
 
-            console.log(dayWeek)
+            
 
             switch (gender) {
                 case "female":
