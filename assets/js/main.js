@@ -19,7 +19,8 @@ $(document).ready(function () {
         var MM = birth_date.substr(5, 2);
         var DD = birth_date.substr(8, 2);
 
-        if(DD < 1 || MM < 0 || YY < 0 ){
+        //Validate date picker values to be within the date parameters
+        if(DD < 1 || MM < 1 || YY < 1 || DD > 31 || MM > 12  ){
             $(".birthdate_notify").append("Invalid Birth Date selection , please try again ... "); 
         }
 
